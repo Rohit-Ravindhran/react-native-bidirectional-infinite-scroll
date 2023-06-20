@@ -106,9 +106,9 @@ export const BidirectionalFlatList = (React.forwardRef(
 
     const maybeCallOnStartReached = () => {
       // If onStartReached has already been called for given data length, then ignore.
-      if (data?.length && onStartReachedTracker.current[data.length]) {
-        return;
-      }
+      // if (data?.length && onStartReachedTracker.current[data.length]) {
+      //   return;
+      // }
 
       if (data?.length) {
         onStartReachedTracker.current[data.length] = true;
@@ -134,9 +134,9 @@ export const BidirectionalFlatList = (React.forwardRef(
 
     const maybeCallOnEndReached = () => {
       // If onEndReached has already been called for given data length, then ignore.
-      if (data?.length && onEndReachedTracker.current[data.length]) {
-        return;
-      }
+      // if (data?.length && onEndReachedTracker.current[data.length]) {
+      //   return;
+      // }
 
       if (data?.length) {
         onEndReachedTracker.current[data.length] = true;
